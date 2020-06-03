@@ -95,11 +95,9 @@ class TrgSourceMap(enum.Enum):
     XI_TRG_SOFTWARE = devices.TriggerType.SOFTWARE
     XI_TRG_EDGE_RISING = devices.TriggerType.RISING_EDGE
     XI_TRG_EDGE_FALLING = devices.TriggerType.FALLING_EDGE
+    XI_TRG_OFF = devices.TriggerType.OFF
 
     # Not all XI_TRG_SOURCE values are defined:
-    #
-    # XI_TRG_OFF: Capture of next image is automatically started after
-    #   previous.
     #
     # XI_TRG_LEVEL_HIGH: Specifies that the trigger is considered
     #   valid as long as the level of the source signal is high.
