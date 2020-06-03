@@ -279,6 +279,10 @@ class XimeaCamera(devices.TriggerTargetMixIn, devices.CameraDevice):
                 if getattr(err, 'status', None) == 12: # Not supported
                     _logger.info('no hardware support for %s temperature'
                                  ' readings', temperature_selector)
+                if getattr(err, 'status', None) == 26: # Not implemented
+                    _logger.info('%s temperature readings are not'
+                                 ' implemented on this hardware', 
+                                 temperature_selector)
                 else:
                     raise
             else:
