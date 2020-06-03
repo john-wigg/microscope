@@ -845,6 +845,7 @@ class TriggerType(Enum):
     RISING_EDGE = 1
     FALLING_EDGE = 2
     PULSE = 3
+    OFF = 4
 
 
 class TriggerMode(Enum):
